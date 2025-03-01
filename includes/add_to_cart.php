@@ -36,8 +36,11 @@ if ($result->num_rows > 0) {
     $insert_stmt->bind_param("isssssi", $user_id, $product_name, $image, $seller, $price, $description, $quantity);
     $insert_stmt->execute();
 }
+if (!isset($_SESSION['added_products'])) {
+    $_SESSION['added_products'] = array();
+}
 
-// Redirect back without URL parameters
-header("Location: ./Cart.php");
+$_SESSION['added_products'][$product_name] = true;
+
 exit;
 ?>

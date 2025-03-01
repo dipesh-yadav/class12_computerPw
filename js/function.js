@@ -1,3 +1,4 @@
+//FOR ./includes/filter.php
 
 function applyFilter() {
     var searchQuery = document.getElementById("search_box").value;
@@ -5,6 +6,7 @@ function applyFilter() {
     window.location.href = "./Store.php?search=" + encodeURIComponent(searchQuery) + "&category=" + encodeURIComponent(category);
 }
 
+//FOR ./includes/showProduct.php
 
 function openCartPage(name, image, seller, price, description) {
     window.location.href = "./Cart.php?name=" + encodeURIComponent(name) +
@@ -13,3 +15,5 @@ function openCartPage(name, image, seller, price, description) {
         "&price=" + encodeURIComponent(price) +
         "&description=" + encodeURIComponent(description);
 }
+
+
