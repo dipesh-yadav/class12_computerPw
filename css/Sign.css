@@ -1,0 +1,69 @@
+.container,.User_info, .logbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.logbox{
+    height: auto; 
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text{
+    margin: 0 0 30px 0;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    background-color: black;
+    border: 0.8px solid white;
+    color: white;
+}
+
+.logbox form{
+    height: auto;
+    text-align: left; 
+    gap: 10px;  
+    justify-content: center;
+
+}
+
+input, select, button {
+    width: 100%; 
+    padding: 8px;
+    margin: 5px 0; 
+    box-sizing: border-box; 
+}
+
+/* Align name fields in one row */
+.name-container, .date_container{
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin: 5px;
+}
+
+.name-container input, .date_container input {
+    flex: 1;
+}
+
+#sign_up{
+    background-color: black;
+    color: white;
+    height: 40px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    border: 0.8px solid white;
+
+}
+
+#sign_up:hover{
+    background-color: black;
+    transform: scale(1.04);
+    transition: 0.1s;
+}
+
+

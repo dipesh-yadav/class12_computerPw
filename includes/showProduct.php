@@ -3,8 +3,17 @@
         require 'productInfo.php';
         foreach ($products as $product): 
             list($name, $image, $seller, $price, $category, $description) = $product;
-            $escapedDescription = addslashes($description);
+            $escapedDescription = htmlspecialchars($description, ENT_QUOTES); // Fix escaping
     ?>
+
+    <div class="frame" onclick="openCartPage(
+            '<?= $name ?>',
+            '<?= $image ?>',
+            '<?= $seller ?>',
+            '<?= $price ?>',
+            '<?= $escapedDescription ?>'
+        )">
+
         <div class="frame" onclick="openCartPage('<?= $name ?>', '<?= $image ?>', '<?= $seller ?>', '<?= $price ?>', '<?= $escapedDescription ?>')">
             <img src="images/<?= $image ?>" alt="<?= $name ?>">
             <div class="description">
@@ -18,5 +27,7 @@
             </div>
         </div>
         <script src="./js/function.js"></script>
-    <?php endforeach; ?>
+    </div>
+        <?php endforeach; ?>
+    
 </div>
