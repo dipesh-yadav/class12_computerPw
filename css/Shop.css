@@ -1,0 +1,73 @@
+/*#p1{
+    font-size: 10px;
+    text-align: center;
+} */
+.class1{
+    text-align: center;  
+}
+
+#login{
+    text-align: center;
+    text-decoration-color: white;
+    
+}
+
+#button1{
+    padding: 10px;
+    width: 10%;
+}
+
+.content{
+    display: grid;
+    
+
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: 1.5;
+    font-style: justify;
+}
+
+.chip1{
+    display: flex;
+    place-items: right;  
+}
+
+.rectangle{
+    height: 400;
+    width: 100%;
+    background-color: rgb(219, 225, 245);
+    
+    padding: 0;
+    display: grid;
+    
+    
+  }
+
+.rectangle1{
+    height: 355;
+    width: 97%;
+    background-color: black;
+    display: inline-flex;
+    
+    place-self: center;
+    
+}
+
+.rectangle1_1{
+    height: 355;
+    width: 60%;
+    background-color: blue;
+    display: flex;
+    align-self: left;
+}
+
+.rectangle1_2{
+    height: 355;
+    width: 40%;
+    place-self: right;
+    color: red;
+}

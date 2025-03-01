@@ -1,0 +1,112 @@
+html{
+    box-sizing: border-box;
+}
+
+h1{
+    width: 150px;
+    height: 40px; 
+}
+
+body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.heading, .navbar, .items, .frame, .description{
+    display: flex;
+    place-items: center;
+    flex-wrap: wrap;
+}
+
+.heading, body, .items{
+    background-color: black;
+    
+}
+
+.heading{
+    height: 75px;
+    justify-content: center;
+    gap: 550px;
+    color: white;
+    align-items: center;
+}
+
+#logo{
+    height: auto;
+    width: 65px;
+    object-fit: cover;
+}
+
+h4{
+    width: 65px;
+    padding: 2px;
+    height: 25px;
+}
+
+.navbar{
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    color: black;
+}
+
+.button{
+    height: 20px;
+    width: 100px;
+    border: 30px black;
+    padding: 1px;
+    text-align: center;
+    
+}
+
+.items{
+    justify-content: center;
+    margin: 20px;
+    gap: 30px;
+}
+
+
+.frame{
+    margin: 0;
+    height:315px;
+    width:270px;
+    padding: 1px;
+    border-radius: 10px;
+    justify-content: center;
+    gap:5px;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #212121;
+}
+
+img{
+    object-fit: cover;
+    height: 225;
+    width:255px;
+    margin: 0;
+    border-radius: 10px ;
+}
+
+.description{
+    height: 80px;
+    width:255px;
+    margin: 0;
+    color: white;
+    border-radius: 10px;   
+}
+
+.text{
+    text-align: left;
+    height: 60px;
+    width: 255px;
+}
+
+.price{
+    height: 20px;
+    width: 255px;
+    text-align: right;
+    
+}
+

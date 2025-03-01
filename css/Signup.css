@@ -1,0 +1,82 @@
+.container,.User_info, .logbox{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.container{
+    color: black;
+    background-color:white ;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 65px;
+
+}
+
+.logbox{
+    margin-top: 40px;
+    height: 470px; 
+    width: 35%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    margin-top: 25px;
+    height: auto;
+    width: 90%;
+    text-align: center;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+}
+
+.User_info{
+    height: 230px;
+    width: 73%;
+    flex-direction: row;
+    text-align: left; 
+    gap: 10px;  
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+input, select, button {
+    width: 100%; 
+    padding: 8px;
+    margin: 5px 0; 
+    box-sizing: border-box; 
+}
+
+/* Align name fields in one row */
+.name-container, .date_container{
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin: 5px;
+}
+
+.name-container input, .date_container input {
+    flex: 1;
+}
+
+#sign_up{
+    background-color: black;
+    color: white;
+    height: 40px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    border: 0.8px solid black;
+
+}
+
+#sign_up:hover{
+    background-color: black;
+    transform: scale(1.04);
+    transition: 0.1s;
+}
+
+

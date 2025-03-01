@@ -1,0 +1,91 @@
+.c_container, .c_frame, .interact{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c_container{
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.Your_cart{
+    font-size: 27px;
+    text-align: left;
+    height: auto;
+    width: 87%;
+    margin: 20px 0 0 0;
+}
+.c_frame{
+    height: 180px;
+    width: 87%;
+    flex-direction: row;
+    object-fit: contain;
+    gap: 15px;
+    align-items: center;
+    background-color: #212121;
+}
+
+.c_frame img{
+    height: 180px;
+    width: 20%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.des{
+    height: 150px;
+    width: 40%;
+    line-height: 16px;
+    font-size: 18px;
+
+}
+
+.star{
+    font-size: 27px;
+}
+
+.interact{
+    height: 150px;
+    width: 12%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.cost{
+    height: 150px;
+    width: 20%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 19px;
+}
+
+.interact button,.number{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+}
+
+.interact button{
+    background-color: #212121;
+    border: 1px solid white;
+}
+
+.number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interact button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
