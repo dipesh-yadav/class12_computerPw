@@ -2,7 +2,7 @@
     <?php 
         require 'productInfo.php';
         foreach ($products as $product): 
-            list($name, $image, $seller, $price, $description) = $product;
+            list($name, $image, $seller, $price, $category, $description) = $product;
             $escapedDescription = addslashes($description);
     ?>
         <div class="frame" onclick="openCartPage('<?= $name ?>', '<?= $image ?>', '<?= $seller ?>', '<?= $price ?>', '<?= $escapedDescription ?>')">
@@ -17,5 +17,6 @@
                 </div>
             </div>
         </div>
+        <script src="./js/function.js"></script>
     <?php endforeach; ?>
 </div>

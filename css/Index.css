@@ -1,0 +1,58 @@
+.h_container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.welcome{
+    height: 300px;
+    width: 60%;
+    background-color: white;
+    color: black;
+    margin: 120px 0 20px 0 ;
+    padding: 20px;
+}
+
+.welcome section{
+    font-size: 150px;
+    
+}
+
+.welcome p{
+    font-size: 25px;
+    padding: 0 0 0 30px;
+}
+
+.clicks{
+    display: flex;
+    width: 60%;
+    height: auto;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0;
+}
+
+.clicks button{
+    width: 20%;
+    height: 40px;
+    background-color: white;
+    font-size: 20px;
+    border: 0;
+}
+
+.clicks button:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.sign_box{
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: black;
+    height: 620px;
+    width: 35%;
+    border: 1px solid white;
+    margin: 20px 10px;
+}

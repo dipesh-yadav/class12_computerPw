@@ -11,7 +11,6 @@
     <?php
         include 'includes/navbar.php';
         require 'includes/productInfo.php';
-        require 'includes/function.php';
     ?>
     <div class="store">
         <?php include 'includes/filter.php'; ?>

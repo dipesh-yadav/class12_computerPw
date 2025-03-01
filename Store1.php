@@ -10,7 +10,6 @@
 
     <?php
         include 'includes/navbar.php';
-        require 'includes/function.php';
     ?>
 
     <div class="store">
@@ -21,6 +20,7 @@
         <script src="js/function.js"></script>
 
     </div>
+
 
 </body>
 

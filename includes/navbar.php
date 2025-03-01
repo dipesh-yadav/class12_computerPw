@@ -15,8 +15,17 @@
             <div class="button" onclick="window.location.href='./Store1.php'">STORE</div>
             <div class="button" onclick="window.location.href='./Cart.php'">CART</div>
             <div class="button" onclick="window.location.href='./Contact.php'">CONTACT</div>
-            <div class="button" onclick="window.location.href='./Login.php'">LOG IN</div>
-            <div class="button" onclick="window.location.href='./Signup.php'">SIGN UP</div>
+            <?php 
+                if (session_status() === PHP_SESSION_NONE) {
+                    session_start();
+                }
+
+                if (isset($_SESSION['user_id'])): ?>
+                    <a class="button" href="logout.php">Logout</a>
+                    <span class="button"><?php echo $_SESSION['name']; ?></span>
+            <?php else: ?>
+                <div class="button" onclick="window.location.href='./user.php'">LOG IN</div>
+            <?php endif; ?>
         </div>
     </div>
     <div class="border"></div>

@@ -46,6 +46,9 @@ body{
     background-color: white;
     overflow: hidden;
     color: black;
+    position: relative; z-index: 1000;
+    padding-top: 0%;
+    padding-bottom: 0%;
 }
 
 .button{

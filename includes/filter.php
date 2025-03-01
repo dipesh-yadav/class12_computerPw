@@ -1,3 +1,5 @@
+<script src="./js/function.js"></script>
+
 <div class="filter">
     <div class="search">
         <input type="text" id="search_box" placeholder="Search products..." value="<?= htmlspecialchars($_GET['search'] ?? '') ?>">
@@ -15,7 +17,7 @@
             <option value="Battery" <?= (isset($_GET['category']) && $_GET['category'] == 'Battery') ? 'selected' : '' ?>>Battery</option>
 
             <option value="Motors" <?= (isset($_GET['category']) && $_GET['category'] == 'Motors') ? 'selected' : '' ?>>Motors</option>
-            
+
         </select>
     </div>
 </div>
