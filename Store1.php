@@ -18,18 +18,7 @@
         <?php include 'includes/filter.php'; ?>
         <?php include 'includes/showProduct.php'; ?>
 
-
-        
-<script src="js/function.js"></script>
-        <script>
-            function openCartPage(name, image, seller, price, description) {
-                window.location.href = "Cart.php?name=" + encodeURIComponent(name) +
-                    "&image=" + encodeURIComponent(image) +
-                    "&seller=" + encodeURIComponent(seller) +
-                    "&price=" + encodeURIComponent(price) +
-                    "&description=" + encodeURIComponent(description);
-            }
-        </script>
+        <script src="js/function.js"></script>
 
     </div>
 
