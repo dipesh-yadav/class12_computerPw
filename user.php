@@ -1,5 +1,6 @@
 <?php require "includes/loginprocess.php"; ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +11,7 @@
     <?php include 'includes/navbar.php'; ?>
 
 </head>
+
 
 <body>
 
@@ -38,13 +40,19 @@
                         </ul>
 
                         <div class="tab-content mt-3">
+
+
                         <!-- Login Form -->
                         <div class="tab-pane fade show active" id="login">
-                            <form method="POST">
-                            <h5 class="fw-normal mb-3 pb-3">Sign into your account</h5>
 
-                            <?php if (isset($register_success)) echo "<p class='text-success'>$register_success</p>"; ?>
-                            <?php if (isset($login_error)) echo "<p class='text-danger'>$login_error</p>"; ?>
+                            <form method="POST">
+                                <h5 class="fw-normal mb-3 pb-3">Sign into your account</h5>
+
+                            <?php if (isset($register_success)) 
+                                echo "<p class='text-success'>$register_success</p>"; ?>
+
+                            <?php if (isset($login_error)) 
+                                echo "<p class='text-danger'>$login_error</p>"; ?>
 
                             <div class="form-outline mb-4">
                                 <input type="email" name="email" class="form-control form-control-lg" required />
